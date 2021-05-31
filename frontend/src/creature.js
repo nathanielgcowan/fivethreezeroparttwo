@@ -11,4 +11,11 @@ class Creature {
         Creature.allCreatures.push(this)
         this.renderCreature()
     }
+
+    static renderCreature(elements){
+        deck.innerHTML = ""
+        for (let element of elements){
+            element.renderCreature()
+        }
+    }
 }
